@@ -33,12 +33,14 @@ body {
 }
 
 .ball {
-    --position: 50;
-    
+    --x: 50;
+    --y: 50;
+
     position: absolute;
     background-color: var(--foreground-color);
-    top: calc(var(--position) * 1vh);
-    transform: translateX(-50%);
-    width: 1vh;
-    height: 10vh;
+    left: calc(var(--x) * 1vw);
+    top: calc(var(--y) * 1vh);
+    transform: translateX(-50%, -50%);
+    width: 2.5vh;
+    height: 2.5vh;
 }
