@@ -60,7 +60,7 @@ export default class Ball {
 function randomNumberBetween(min, max) {
   return Math.random() * (max - min) + min
 }
-
+/*Checks collision with the paddles*/
 function isCollision(rect1, rect2) {
   return (
     rect1.left <= rect2.right &&

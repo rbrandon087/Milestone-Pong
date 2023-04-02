@@ -1,3 +1,4 @@
+/*Set the speed for the paddles*/
 const SPEED = 0.02
 
 export default class Paddle {
