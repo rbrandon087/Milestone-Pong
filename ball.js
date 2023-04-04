@@ -1,6 +1,5 @@
 const INITIAL_VELOCITY = 0.025
 const VELOCITY_INCREASE = 0.00001
-
 export default class Ball {
   constructor(ballElem) {
     this.ballElem = ballElem
@@ -26,7 +25,7 @@ export default class Ball {
   rect() {
     return this.ballElem.getBoundingClientRect()
   }
-
+/*reset the ball back to the middle*/
   reset() {
     this.x = 50
     this.y = 50
