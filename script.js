@@ -9,6 +9,7 @@ const playerScoreElem = document.getElementById("player-score")
 const computerScoreElem = document.getElementById("computer-score")
 
 let lastTime
+/*loop for ball and two paddles*/
 function update(time) {
   if (lastTime != null) {
     const delta = time - lastTime
@@ -31,7 +32,7 @@ function isLose() {
   const rect = ball.rect()
   return rect.right >= window.innerWidth || rect.left <= 0
 }
-
+/*checks when the player loses */
 function handleLose() {
   const rect = ball.rect()
   if (rect.right >= window.innerWidth) {
