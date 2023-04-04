@@ -1,6 +1,7 @@
 *, *::after, *::before {
     box-sizing: border-box;
 }
+/*color changes*/
 :root {
     --hue: 200;
     --saturation: 50%;
