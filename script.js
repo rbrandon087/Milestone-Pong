@@ -1,7 +1,7 @@
 /*Imported from Ball and Paddle*/ 
 import Ball from "./ball.js"
 import Paddle from "./Paddle.js"
-
+/*getting the DOM */
 const ball = new Ball(document.getElementById("ball"))
 const playerPaddle = new Paddle(document.getElementById("player-paddle"))
 const computerPaddle = new Paddle(document.getElementById("computer-paddle"))
@@ -32,7 +32,7 @@ function isLose() {
   const rect = ball.rect()
   return rect.right >= window.innerWidth || rect.left <= 0
 }
-/*checks when the player loses */
+/*score check here*/
 function handleLose() {
   const rect = ball.rect()
   if (rect.right >= window.innerWidth) {
